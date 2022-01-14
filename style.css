@@ -1,0 +1,116 @@
+header {
+    font-family:'Work Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    background-color: #70a48b;
+    margin: 0 auto;
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    border:3px ridge #e7e7e8;
+    float:center;
+}
+li {
+    text-align: right;
+    font-size: large;        
+    display: inline;
+    color: white;
+    padding: 9px 17px;
+    text-decoration: none;
+    float:center;
+}
+.hd_button {
+    border: 2px;      
+    border-radius: 20px;
+    border-color: #1f211c;
+    padding: 12px;
+    background-color: black;
+    color: white ;
+    width: 200px;
+    font-size: medium;
+    text-align: center;
+    float:center;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+
+}
+section{
+    padding: 20px;
+}
+
+button{
+    background-color: #70a48b;
+    color: white ;
+    border-radius: 20px;
+    border-color: #1f211c;
+    padding: 25px;
+    width: 500px;       
+    font-size: medium;
+    text-align: left;
+}
+.grid-pic-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly
+}
+img{
+    border-radius: 10px;
+}
+footer {
+    background-color: #70a48b;
+    margin: 0;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    
+    ul {
+        float:right;
+    }
+    li {
+        float:left;
+    }
+    h2{
+        margin-left: 65px;
+    }
+    .hd_button {
+        float:right;
+    }
+    .grid-container-element { 
+        display: grid; 
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 30px;  
+        width: flex;
+    } 
+    .grid-child-element { 
+        margin: 10px;  
+    }
+    .grid-pic-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-evenly
+    }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer{
+        width: 100%;
+    }
+  
+}
